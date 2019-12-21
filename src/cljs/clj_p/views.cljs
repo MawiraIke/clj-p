@@ -11,14 +11,35 @@
      :label (str "Hello from " @name)
      :level :level1]))
 
+;;(defn navigation-bar
+;;  []
+;;  [:div#topnav {:class "topnav"}
+;;   [:a {:class "active"
+;;        :href  "#/home"} "Home"]
+;;   [:a {:href "#/cv"} "CV"]
+;;   [:a {:href "#/contact"} "Contact"]
+;;   [:a {:href "#/about"} "About Me"]])
+
+;; Bootstrap navigation bar, needs formatting
 (defn navigation-bar
   []
-  [:div#topnav {:class "topnav"}
-   [:a {:class "active"
-        :href  "#/home"} "Home"]
-   [:a {:href "#/cv"} "CV"]
-   [:a {:href "#/contact"} "Contact"]
-   [:a {:href "#/about"} "About Me"]])
+  [:nav {:class "navbar navbar-expand-lg navbar-dark bg-dark"}
+   [:a {:class "navbar-brand" :href "/#"} "Home"]
+   [:button {:class         "navbar-toggler"
+             :type          "button"
+             :data-toggle   "collapse"
+             :data-target   "#navbarNav"
+             :aria-controls "navbarNav"
+             :aria-expanded "false"
+             :aria-label    "Toggle navigation"} [:span {:class "navbar-toggler-icon"}]]
+   [:div {:class "collapse navbar-collapse"
+          :id    "navbarNav"}
+    [:ul {:class "navbar-nav my-2 my-lg-0"}
+     ;;[:li {:class "nav-item active"}
+     ;; [:a {:class "nav-link" :href "/#"} "Home" [:span {:class "sr-only"} "(current)"]]]
+     ;;[:li {:class "nav-item"}
+     ;; [:a {:class "nav-link" :href "/#spacerr"} "CV"]]
+     ]]])
 
 (defn image-section
   []
@@ -38,9 +59,14 @@
 
 (defn space-add-with-pdf
   []
-  [:div {:class "spacer-with-pdf"}
+  [:div {:class "spacer-with-pdf"
+         :id "spacerr"}
    [:a {:class "resume-link"
-        :href  "#/resume"} "Click here for resume as PDF"]])
+        :href  "/docs/resume.pdf"} "Click here for resume as PDF"]])
+
+(defn minor-space
+  []
+  [:div {:class "minor-space"}])
 
 (defn copyright
   []
@@ -50,13 +76,12 @@
 (defn social-links
   []
   [:container {:class "row"}
-   [:a {:class "col-md-1" :href "#/email"} "EMAIL"]
-   [:a {:class "col-md-2" :href "#/linkedin"} "LINKEDIN"]
-   [:a {:class "col-md-1" :href "#/github"} "GITHUB"]
-   [:a {:class "col-md-3" :href "#/clojurians"} "CLOJURIANS ON SLACK"]
-   [:a {:class "col-md-2" :href "#/stack-o"} "STACK OVERFLOW"]
-   [:a {:class "col-md-1" :href "#/twitter"} "TWITTER"]
-   [:a {:class "col-md-2" :href "#/coffee"} "BUY ME A COFFEE"]])
+   [:a {:class "col-md-2" :href "mailto:mawiraike@gmail.com"} "EMAIL"]
+   [:a {:class "col-md-2" :href "https://www.linkedin.com/in/ike-mawira-706974163"} "LINKEDIN"]
+   [:a {:class "col-md-2" :href "https://github.com/MawiraIke"} "GITHUB"]
+   [:a {:class "col-md-2" :href "https://stackoverflow.com/users/10081740/ike-mawira"} "STACK OVERFLOW"]
+   [:a {:class "col-md-2" :href "https://twitter.com/ike__dev"} "TWITTER"]
+   [:a {:class "col-md-2" :href "https://www.buymeacoffee.com/ikeM"} "BUY ME A COFFEE"]])
 
 (defn main-panel []
   [:div
@@ -70,5 +95,7 @@
     :children [[space-add]]]
    [space-add-with-pdf]
    [:footer {:class "footer-c"}
+    [minor-space]
     [copyright]
-    [social-links]]])
+    [social-links]
+    [minor-space]]])
