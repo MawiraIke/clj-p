@@ -15,10 +15,11 @@
 ;;  []
 ;;  [:div#topnav {:class "topnav"}
 ;;   [:a {:class "active"
-;;        :href  "#/home"} "Home"]
-;;   [:a {:href "#/cv"} "CV"]
-;;   [:a {:href "#/contact"} "Contact"]
-;;   [:a {:href "#/about"} "About Me"]])
+;;        :href  "/#"} "Home"]
+;;   ;;[:a {:href "#/cv"} "CV"]
+;;   ;;[:a {:href "#/contact"} "Contact"]
+;;   ;;[:a {:href "#/about"} "About Me"]
+;;   ])
 
 ;; Bootstrap navigation bar, needs formatting
 (defn navigation-bar
@@ -97,5 +98,7 @@
    [:footer {:class "footer-c"}
     [minor-space]
     [copyright]
+    [minor-space]
     [social-links]
+    [minor-space]
     [minor-space]]])
