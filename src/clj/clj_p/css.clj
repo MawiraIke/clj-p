@@ -60,6 +60,11 @@
                         :text-align "center"
                         :color "#5c5c5c"}]
 
+           [:.footer-c {:background-color "#967850"
+                        :position "relative"
+                        :text-align "center"
+                        :color "#5c5c5c"}]
+
            ;; Clear the floats after the columns
            [:.row:after {:content ""
                          :display "table"
@@ -67,9 +72,7 @@
 
            [:.copyright-contain {:color "white"}]
 
-           [:.brand-i {:width "30px"
-                       :height "30px"}]
-
            [:.minor-space {:width "100%"
                            :height "20px"}]
+
            )
