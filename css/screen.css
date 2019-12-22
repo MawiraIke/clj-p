@@ -7,7 +7,7 @@ body {
   overflow: hidden;
 }
 
-.topnav, a {
+.topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -16,12 +16,12 @@ body {
   font-size: 17px;
 }
 
-.topnav, a:hover {
+.topnav a:hover {
   background-color: #dddddd;
   color: black;
 }
 
-.topnav, a.active {
+.topnav a.active {
   background-color: #4caf50;
   color: white;
 }
@@ -45,7 +45,7 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.center-text, p {
+.center-text p {
   font-size: 20px;
 }
 
@@ -62,7 +62,7 @@ img {
   text-align: center;
 }
 
-.spacer-with-pdf, a {
+.spacer-with-pdf a {
   color: white;
   position: absolute;
   top: 35%;
@@ -87,12 +87,8 @@ img {
   color: white;
 }
 
-.brand-i {
-  width: 30px;
-  height: 30px;
-}
-
 .minor-space {
   width: 100%;
   height: 20px;
 }
+
