@@ -26,7 +26,7 @@
 
            ;; Image styling
            [:img {:width      "100%"
-                  :height     "200px"
+                  :height     "50%"
                   :object-fit "cover"}]
 
            [:.contain {:position   "relative"
@@ -35,7 +35,7 @@
 
            [:.center-text {:position  "absolute"
                            :top       "50%"
-                           :left      "50%"
+                           ;;:left      "50%"
                            :transform "translate(-50%, -50%)"}]
 
            [:.center-text [:p {:font-size "20px"}]]
