@@ -6,4 +6,3 @@ out
 .idea/
 .shadow-cljs/
 node_modules/
-resources/public/vendor/
