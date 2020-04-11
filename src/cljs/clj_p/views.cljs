@@ -77,7 +77,7 @@
   [:div {:class "spacer-with-pdf"
          :id    "spacerr"}
    [:a {:class "resume-link"
-        :href  "/docs/Ike Mawira.pdf"} "Click here for resume as PDF"]])
+        :href  "docs/Ike Mawira.pdf"} "Click here for resume as PDF"]])
 
 (defn minor-space
   []
