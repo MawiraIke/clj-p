@@ -52,8 +52,8 @@
   :profiles
   {:dev
    {:dependencies [[binaryage/devtools "0.9.11"]
-                   [day8.re-frame/re-frame-10x "0.4.4"]
                    [day8.re-frame/tracing "0.5.3"]]}
 
    :prod { :dependencies [[day8.re-frame/tracing-stubs "0.5.3"]]}
-   })
+   }
+  :prep-tasks [["garden" "once"]])
