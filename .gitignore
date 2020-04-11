@@ -3,3 +3,12 @@
 /*-init.clj
 /resources/public/js/compiled
 out
+.idea/
+.shadow-cljs/
+clj-p.iml
+node_modules/
+package-lock.json
+resources/public/js/
+resources/public/vendor/
+*.iml
+*.log
