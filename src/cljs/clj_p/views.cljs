@@ -16,9 +16,8 @@
   []
   [re-com/h-box
    :style {:position  "absolute"
-           :top       "50%"
-           :left      "10%"
-           :transform "translate(-50%, -50%)"}
+           :top       "40%"
+           :left      "5%"}
    :children [[re-com/v-box
                :children [[re-com/title
                            :style {:color "white"}
