@@ -111,14 +111,14 @@
                 :size "1"
                 :justify :center
                 :children [[:img {:src "images/twitter.svg"
-                                  :alt "GitHub"
+                                  :alt "Twitter"
                                   :class "footer-img"}]]]]
               [:a {:class "col-md-2" :href "https://www.buymeacoffee.com/ikeM"}
                [re-com/h-box
                 :size "1"
                 :justify :end
                 :children [[:img {:src "images/bmac.svg"
-                                  :alt "GitHub"
+                                  :alt "Buy me a coffee"
                                   :class "footer-img"}]]]]]])
 
 (defn main-panel []
