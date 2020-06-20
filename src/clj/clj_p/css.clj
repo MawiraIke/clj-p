@@ -80,8 +80,8 @@
 
            [:.myoozik-link:hover {:color "black"}]
 
-           [:.email-img {:height "20px"
-                         :width "20px"
+           [:.footer-img {:height "30px"
+                         :width "30px"
                          :object-fit "cover"}]
 
            )

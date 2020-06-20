@@ -77,31 +77,49 @@
 (defn social-links
   []
   [re-com/h-box
-   :justify :between
+   :justify :around
    :children [[:a {:class "col-md-2" :href "mailto:mawiraike@gmail.com"}
-               [re-com/title
-                :style {:color "white"}
-                :label "EMAIL"]]
+               [re-com/h-box
+                :size "1"
+                ;;:justify :center
+                :children [[:img {:src "images/email.svg"
+                                  :alt "Email"
+                                  :class "footer-img"}]]]]
               [:a {:class "col-md-2" :href "https://www.linkedin.com/in/ike-mawira-706974163"}
-               [re-com/title
-                :style {:color "white"}
-                :label "LINKED-IN"]]
+               [re-com/h-box
+                :size "1"
+                :justify :center
+                :children [[:img {:src "images/linkedin.svg"
+                                  :alt "Linkedin"
+                                  :class "footer-img"}]]]]
               [:a {:class "col-md-2" :href "https://github.com/MawiraIke"}
-               [re-com/title
-                :style {:color "white"}
-                :label "GITHUB"]]
+               [re-com/h-box
+                :size "1"
+                :justify :center
+                :children [[:img {:src "images/github.svg"
+                                  :alt "GitHub"
+                                  :class "footer-img"}]]]]
               [:a {:class "col-md-2" :href "https://stackoverflow.com/users/10081740/ike-mawira"}
-               [re-com/title
-                :style {:color "white"}
-                :label "STACK OVERFLOW"]]
+               [re-com/h-box
+                :size "1"
+                :justify :center
+                :children [[:img {:src "https://img.icons8.com/color/48/000000/stackoverflow.png"
+                                  :alt "Stack overflow"
+                                  :class "footer-img"}]]]]
               [:a {:class "col-md-2" :href "https://twitter.com/ike__dev"}
-               [re-com/title
-                :style {:color "white"}
-                :label "TWITTER"]]
+               [re-com/h-box
+                :size "1"
+                :justify :center
+                :children [[:img {:src "images/twitter.svg"
+                                  :alt "GitHub"
+                                  :class "footer-img"}]]]]
               [:a {:class "col-md-2" :href "https://www.buymeacoffee.com/ikeM"}
-               [re-com/title
-                :style {:color "white"}
-                :label "BUY ME A COFFEE"]]]])
+               [re-com/h-box
+                :size "1"
+                :justify :end
+                :children [[:img {:src "images/bmac.svg"
+                                  :alt "GitHub"
+                                  :class "footer-img"}]]]]]])
 
 (defn main-panel []
   [re-com/v-box
