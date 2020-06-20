@@ -41,10 +41,10 @@
            [:.center-text [:p {:font-size "20px"}]]
 
            [:.spacer {:height           "150px"
-                      :background-color "#dee3e0"}]
+                      :background-color "#102027"}]
 
            [:.spacer-with-pdf {:height           "250px"
-                               :background-color "#242424"
+                               :background-color "#1c313a"
                                :color            "white"
                                :position         "relative"
                                :text-align       "center"}]
@@ -55,7 +55,7 @@
                                    :left      "50%"
                                    :transform "translate(-50%, -50%)"}]]
 
-           [:.footer-c {:background-color "#967850"
+           [:.footer-c {:background-color "#263238"
                         :position         "relative"
                         :text-align       "center"
                         :color            "#5c5c5c"}]
@@ -69,5 +69,19 @@
 
            [:.minor-space {:width  "100%"
                            :height "20px"}]
+
+           [:.minor-horizontal-space {:width "20px"}]
+
+           [:.myoozik {:object-fit "cover"
+                       :height "150px"                      ;; change the image link padding upon changing this value.
+                       :width "150px"}]
+
+           [:.myoozik-link {:color "black"}]
+
+           [:.myoozik-link:hover {:color "black"}]
+
+           [:.email-img {:height "20px"
+                         :width "20px"
+                         :object-fit "cover"}]
 
            )
